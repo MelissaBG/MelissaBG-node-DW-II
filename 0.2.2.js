@@ -16,7 +16,7 @@ const postagem ={
   data:,
   publicados: 
 }
-const cometários ={
+const cometarios ={
   id: 01, 
   data_cometário: 2022 05 04,
 }
@@ -28,6 +28,9 @@ const Usuarios = {
   email: 'alinepires@emil.com',
   postagem: [
     postagem,
+  ],
+  comentarios: [
+    comentarios,
   ]
   }
   }
