@@ -1,0 +1,23 @@
+const tarefas =[ {
+  titulo = 'Passear com o cachorro',
+  concluida = false,
+  pessoa = ['mathias']
+},
+{
+  titulo = 'Comprar leite',
+  concluida = false,
+  pessoa = ['melissa']
+},
+{
+  titulo = 'Lavar a louça',
+  concluida = true,
+  pessoa = ['mathias', 'melissa']
+}
+];
+const resultado = tarefas // casteamento de metodos. Some retorna apenas um true or false, e nenhum outro tipo de retorno.
+  .filter(tarefas => tarefas.concluida)
+  .filter(tarefas => tarefas.pessoas
+      .some((pessoa) => pessoa === 'mathias'));
+
+
+console.log(resultado);
