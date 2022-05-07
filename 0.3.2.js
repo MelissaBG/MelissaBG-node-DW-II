@@ -18,6 +18,14 @@ const tarefaRealizada = tarefas.filter(tarefa => {
 }); //Busca 
 return tarefaRealizada; //retorna as tarefas.
 };
+//const buscarTarefasConcluidas = () => tarefas.filter(((concluida)) => concluida);
+const buscarNaoTarefasConcluidas = () => {
+  const tarefaRealizada = tarefas.filter(tarefa => {
+    const concluida = tarefa.concluida;
+     return concluida === false;
+});
+return tarefasRealizadas.length;
+}
 
 const buscarTarefasNaoConcluidas = () => {
   const tarefaNaoConcluida = tarefas.filter( tarefa => {
