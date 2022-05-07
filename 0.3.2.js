@@ -17,7 +17,7 @@ const tarefas =[
 ];
 
 const buscarTarefasAbaixoDeTrintaDias = (tarefas) => tarefas
-    .some((tarefa) => tarefas.dias <= 30);
+    .some((tarefa) => tarefa.dias <= 30);
 
 console.log(buscarTarefasAbaixoDeTrintaDias(tarefas));
 
