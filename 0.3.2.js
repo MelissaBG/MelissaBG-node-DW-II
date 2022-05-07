@@ -1,17 +1,17 @@
 const tarefas =[ 
 {
-  titulo = 'Passear com o cachorro',
-  concluida = false,
+  titulo : 'Passear com o cachorro',
+  concluida : false,
   dias: 10,
 },
 {
-  titulo = 'Comprar leite',
-  concluida = false,
+  titulo :'Comprar leite',
+  concluida : false,
   dias: 5,
 },
 {
-  titulo = 'Lavar a louça',
-  concluida = true,
+  titulo : 'Lavar a louça',
+  concluida : true,
   dias: 60,
 }
 ];
@@ -23,21 +23,21 @@ console.log(buscarTarefasAbaixoDeTrintaDias(tarefas));
 
 
 
-const buscarTarefasConcluidas = () => {
-const tarefaRealizada = tarefas.filter(tarefa => {
-  const concluida = tarefa.concluida;
-   return concluida === true;
-}); //Busca 
-return tarefaRealizada; //retorna as tarefas.
-};
+//const buscarTarefasConcluidas = () => {
+//const tarefaRealizada = tarefas.filter(tarefa => {
+//  const concluida = tarefa.concluida;
+//   return concluida === true;
+//}); //Busca 
+//return tarefaRealizada; //retorna as tarefas.
+//};
 //const buscarTarefasConcluidas = () => tarefas.filter(((concluida)) => concluida);
-const buscarNaoTarefasConcluidas = () => {
-  const tarefaRealizada = tarefas.filter(tarefa => {
-    const concluida = tarefa.concluida;
-     return concluida === false;
-});
-return tarefasRealizadas.length;
-}
+//const buscarNaoTarefasConcluidas = () => {
+  //const tarefaRealizada = tarefas.filter(tarefa => {
+   // const concluida = tarefa.concluida;
+    // return concluida === false;
+//});
+//return tarefasRealizadas.length;
+//}
 
 
 //onst buscarTarefasNaoConcluidas = () => {
@@ -48,7 +48,7 @@ return tarefasRealizadas.length;
 //    return naoConcluida;
 //  })
 //}
-console.log(buscarNaoTarefasConcluidas());
-console.log(buscarTarefasConcluidas());
+//console.log(buscarNaoTarefasConcluidas());
+//console.log(buscarTarefasConcluidas());
 
  
