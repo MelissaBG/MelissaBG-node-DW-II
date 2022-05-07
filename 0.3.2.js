@@ -1,4 +1,5 @@
-const tarefas =[ {
+const tarefas =[ 
+{
   titulo = 'Passear com o cachorro',
   concluida = false,
   dias: 10,
