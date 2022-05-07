@@ -14,10 +14,15 @@ const tarefas =[ {
   pessoa = ['mathias', 'melissa']
 }
 ];
+const tarefasConcluidas = (tarefas) => tarefas.concluida
+const tarefasConcluidasPorMathias = (tarefas) => tarefas.pessoas
+  .some((pessoa) => pessoa === 'mathias');
+
 const resultado = tarefas // casteamento de metodos. Some retorna apenas um true or false, e nenhum outro tipo de retorno.
   .filter(tarefas => tarefas.concluida)
   .filter(tarefas => tarefas.pessoas
       .some((pessoa) => pessoa === 'mathias'));
 
-
+const todasConcluidas = tarefas.every((tarefas) => tarefa.concluida === true);
+console.log(todasConcluidas);
 console.log(resultado);
