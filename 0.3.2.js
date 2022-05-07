@@ -14,10 +14,13 @@ const tarefas =[ {
   dias: 60,
 }
 ];
-const buscarTarefasAbaixoDeTrintaDias = (tarefas) => tarefas.dias
-    .some((dias) => dias <= 30);
 
-console.log(buscarTarefasAbaixoDeTrintaDias);
+const buscarTarefasAbaixoDeTrintaDias = (tarefas) => tarefas
+    .some((tarefa) => tarefas.dias <= 30);
+
+console.log(buscarTarefasAbaixoDeTrintaDias(tarefas));
+
+
 
 const buscarTarefasConcluidas = () => {
 const tarefaRealizada = tarefas.filter(tarefa => {
