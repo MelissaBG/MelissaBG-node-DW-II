@@ -27,13 +27,16 @@ const buscarNaoTarefasConcluidas = () => {
 return tarefasRealizadas.length;
 }
 
-const buscarTarefasNaoConcluidas = () => {
-  const tarefaNaoConcluida = tarefas.filter( tarefa => {
-    const naoConcluida = tarefa.concluida;
-    const naoConcluida === true;
-    naoConcluida ++;
-    return naoConcluida;
-  })
-}
+
+//onst buscarTarefasNaoConcluidas = () => {
+//  const tarefaNaoConcluida = tarefas.filter( tarefa => {
+//    const naoConcluida = tarefa.concluida;
+//    const naoConcluida === true;
+//    naoConcluida ++;
+//    return naoConcluida;
+//  })
+//}
+console.log(buscarNaoTarefasConcluidas());
+console.log(buscarTarefasConcluidas());
 
  
