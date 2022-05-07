@@ -1,16 +1,24 @@
 const tarefas =[ {
   titulo = 'Passear com o cachorro',
   concluida = false,
+  dias: 10,
 },
 {
   titulo = 'Comprar leite',
   concluida = false,
+  dias: 5,
 },
 {
   titulo = 'Lavar a louça',
   concluida = true,
+  dias: 60,
 }
 ];
+const buscarTarefasAbaixoDeTrintaDias = (tarefas) => tarefas.dias
+    .some((dias) => dias <= 30);
+
+console.log(buscarTarefasAbaixoDeTrintaDias);
+
 const buscarTarefasConcluidas = () => {
 const tarefaRealizada = tarefas.filter(tarefa => {
   const concluida = tarefa.concluida;
