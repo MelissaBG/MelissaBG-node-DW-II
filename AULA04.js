@@ -94,6 +94,14 @@ const filmes =[{
     avaliacao:8,
     direçao: "George Miller"
   }]
+/**
+ * 
+ */
 const ano2000 = (filme, index, array) =>  {
-  return filme.lan
+  return filme.anoLançamento;
 }
+/**
+ * Exibir
+ */
+const filmesMaiores2000 = filmes.map(ano2000);
+console.log(filmesMaiores2000);
