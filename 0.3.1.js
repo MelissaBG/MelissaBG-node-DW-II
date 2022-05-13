@@ -50,7 +50,6 @@
    }
    return porTituloAno;
   }
-  const filmesPorTitulo = filmes.map(ano2000);
   console.log(porNomeAno);
   /**
   * [...Array(10)] gera um array com 10 undefineds
