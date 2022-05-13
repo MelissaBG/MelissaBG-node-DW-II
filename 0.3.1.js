@@ -43,7 +43,7 @@
   }, 
   ]
 
-  const ano2000 = (filme, index) =>  {
+  const ano2000 = (filme) =>  {
    const porTituloEAno = {
      Titulo:filme.Titulo,
      anoLançamento: filme.anoLançamento
