@@ -44,14 +44,14 @@
   ]
 
   const ano2000 = (filme) =>  {
-   const porTituloEAno = {
+   const porTituloAno = {
      Titulo:filme.Titulo,
      anoLançamento: filme.anoLançamento
    }
-   return porTituloEAno;
+   return porTituloAno;
   }
   const filmesPorTitulo = filmes.map(ano2000);
- console.log(filmesPorTitulo);
+ console.log(porTituloAno);
   /**Função gerar numeros aleatórios.
   * [...Array(10)] gera um array com 10 undefineds
   * .map() vai preencher todos os elementos do array de acordo com uma função
