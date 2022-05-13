@@ -44,7 +44,7 @@
   ]
 
   const ano2000 = (filme, index, array) =>  {
-    return filme.anoLançamento;
+    return filme.titulo;
   }
   /**Função gerar numeros aleatórios.
   * [...Array(10)] gera um array com 10 undefineds
