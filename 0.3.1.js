@@ -52,7 +52,7 @@
   }
   const filmesPorTitulo = filmes.map(ano2000);
  console.log(porTituloAno);
-  /**Função gerar numeros aleatórios.
+  /**
   * [...Array(10)] gera um array com 10 undefineds
   * .map() vai preencher todos os elementos do array de acordo com uma função
   * ()=>Math.random()*18-9  é a função que retorna um número aleatório entre -9 e 9
