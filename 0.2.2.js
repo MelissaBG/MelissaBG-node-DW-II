@@ -13,12 +13,12 @@ function status (){
 const postagem ={
   autor: 'Aline Pires',
   id: 01,
-  data:,
+  data: 03-04-2022,
   publicados: 
 }
 const cometarios ={
   id: 01, 
-  data_cometário: 2022 05 04,
+  data_cometário: 2022-05-04,
 }
 const Usuarios = {
   Usuario: {
