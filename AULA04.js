@@ -94,8 +94,9 @@ const filmes =[{
     avaliacao:8,
     direçao: "George Miller"
   }]
+  
 /**
- * 
+ * O método map() é invocado a partir de um array e recebe como parâmetro uma função de callback, que é invocada para cada item e retorna o valor do item equivalente no array resultante. No exemplo acima, por exemplo um array de inteiros, essa função de callback retorna o número original elevado ao quadrado.
  */
 const ano2000 = (filme, index, array) =>  {
   return filme.anoLançamento;
