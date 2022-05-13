@@ -43,7 +43,7 @@
   }, 
   ]
 
-  const ano2000 = (filme, index, array) =>  {
+  const porNomeAno = (filme, index, array) =>  {
    const porTituloAno = {
      Titulo:filme.Titulo,
      anoLançamento: filme.anoLançamento
@@ -51,14 +51,14 @@
    return porTituloAno;
   }
   const filmesPorTitulo = filmes.map(ano2000);
- console.log(porTituloAno);
+  console.log(porNomeAno);
   /**
   * [...Array(10)] gera um array com 10 undefineds
   * .map() vai preencher todos os elementos do array de acordo com uma função
   * ()=>Math.random()*18-9  é a função que retorna um número aleatório entre -9 e 9
   */
-  let array = [...Array(5)].map(() => Math.random()*18-9);
+  let arrayId = [...Array(5)].map(() => Math.random()*18-9);
 
-console.log(array);
+console.log(arrayId);
 
  
