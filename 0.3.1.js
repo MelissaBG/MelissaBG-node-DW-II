@@ -43,7 +43,7 @@
   }, 
   ]
 
-  const porNomeAno = (filme, index, array) =>  {
+  const porNomeAno = (filme) =>  {
    const porTituloAno = {
      Titulo:filme.Titulo,
      anoLançamento: filme.anoLançamento
