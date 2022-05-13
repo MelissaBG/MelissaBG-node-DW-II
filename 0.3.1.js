@@ -43,8 +43,12 @@
   }, 
   ]
 
-  const ano2000 = (filme, index, array) =>  {
-    return filme.titulo;
+  const ano2000 = (filme, index) =>  {
+   const porTituloEAno = {
+     Titulo:filme.Titulo,
+     anoLançamento: filme.anoLançamento
+   }
+   return porTituloEAno;
   }
   const filmesPorTitulo = filmes.map(ano2000);
  console.log(filmesPorTitulo);
