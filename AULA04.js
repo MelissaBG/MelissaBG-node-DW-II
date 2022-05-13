@@ -24,7 +24,7 @@ const filmes =[{
   direçao: "Steven Spielberg"
   },
   {
-    di:4,
+    id:4,
     Titulo: "O Senhor dos Aneis ",
      anoLançamento: 2003,
      genero = ['Ação', 'Aventura', 'drama'],
