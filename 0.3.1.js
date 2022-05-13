@@ -46,6 +46,8 @@
   const ano2000 = (filme, index, array) =>  {
     return filme.titulo;
   }
+  const filmesPorTitulo = filmes.map(ano2000);
+ console.log(filmesPorTitulo);
   /**Função gerar numeros aleatórios.
   * [...Array(10)] gera um array com 10 undefineds
   * .map() vai preencher todos os elementos do array de acordo com uma função
