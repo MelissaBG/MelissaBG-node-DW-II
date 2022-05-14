@@ -51,7 +51,7 @@
   /**Enunciado II: Cria um novo array e adicione um atributo chamado id que é gerado
  * de forma incremental. */
   let aux =0;
-  const porNomeAno2 = filem.map(({nome, anoLançamento}, index) =>{
+  const porNomeAno2 = filme.map(({nome, anoLançamento}, index) =>{
     //Posição e soma +1
     aux++;
     return{
