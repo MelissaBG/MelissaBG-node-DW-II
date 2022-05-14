@@ -48,4 +48,8 @@ const novoArrayDrs = medicos.map((medico) => {
   }
   return `${medico.nome} ${medico.sobrenome}`;
 });
+function callback(medico, index, array){
+  
+}
+medicos.forEach(callback);
 console.log(arraysDrs);
