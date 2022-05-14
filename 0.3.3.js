@@ -20,3 +20,12 @@ nome do médico conforme o genero . */
 
   const resultadoPorGenero = medicos 
   .filter(medicos => medico.porGenero)
+
+  let arraysDrs = [];
+  for (let filme of medicos){
+    if(medico.genero === 'masculino'){
+    const cordial = medico.nome  + medico.sobrenome;
+    arrayDrs.push(cordial);
+    }
+
+  }
