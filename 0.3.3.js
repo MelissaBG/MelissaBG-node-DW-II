@@ -14,7 +14,8 @@ const medicos = [
   sobrenome: 'Lutus',
   genero: 'nao-binario',
   }];
-  
+  /**Faça uma função que irá retornar um array de strings. Essa função deve formatar o
+nome do médico conforme o genero . */
   const porGenero = (medicos) => medicos.genero
 
   const resultadoPorGenero = medicos 
