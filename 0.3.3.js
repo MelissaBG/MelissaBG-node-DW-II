@@ -47,8 +47,9 @@ const novoArrayDrs = medicos.map((medico) => {
    return 'Dra. ' + medico.nome + ' ' + medico.sobrenome;
     
   }
-  if (medico.genero === 'nao-binario') {
    return 'Dr(e). ' + medico.nome + ' ' + medico.sobrenome;
-  }
 });
 console.log(arraysDrs);
+
+//Versão simplificada
+
