@@ -51,13 +51,13 @@
    return porTituloAno;
   }
   console.log(porNomeAno);
-  /**
-  * [...Array(10)] gera um array com 10 undefineds
-  * .map() vai preencher todos os elementos do array de acordo com uma função
-  * ()=>Math.random()*18-9  é a função que retorna um número aleatório entre -9 e 9
-  */
-  let arrayId = [...Array(5)].map(() => Math.random()*18-9);
+  const porNomeAno2 = filem.map(({nome, anoLançamento}, index) =>{
+    return{
+      nome, 
+      anoLançamento,
+      id: index + 1,
+    };
+  });
 
-console.log(arrayId);
 
  
