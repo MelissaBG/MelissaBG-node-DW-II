@@ -39,18 +39,16 @@ for (let filme of medicos) {
 }
 //Com Map()
 const novoArrayDrs = medicos.map((medico) => {
-  let cordial;
   if (medico.genero === 'masculino') {
-     cordial = 'Dr. ' + medico.nome + ' ' + medico.sobrenome;
+     return 'Dr. ' + medico.nome + ' ' + medico.sobrenome;
     
   }
   if (medico.genero === 'feminino') {
-   cordial = 'Dra. ' + medico.nome + ' ' + medico.sobrenome;
+   return 'Dra. ' + medico.nome + ' ' + medico.sobrenome;
     
   }
   if (medico.genero === 'nao-binario') {
-     cordial = 'Dr(e). ' + medico.nome + ' ' + medico.sobrenome;
-    
+   return 'Dr(e). ' + medico.nome + ' ' + medico.sobrenome;
   }
 });
 console.log(arraysDrs);
