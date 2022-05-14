@@ -55,6 +55,7 @@
     return{
       nome, 
       anoLançamento,
+      //Gera o id.
       id: index + 1,
     };
   });
