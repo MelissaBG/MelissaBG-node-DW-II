@@ -1,10 +1,5 @@
-/**
- * Enunciado I: Cria um novo array com apenas o título e o ano de lançamento dos
- * filmes.
- * Enunciado II: Cria um novo array e adicione um atributo chamado id que é gerado
- * de forma incremental.
- * 
- */
+
+
  const filmes =[{
   Titulo: " O Poderoso Chefão",
   anoLançamento: 1972,
@@ -42,7 +37,8 @@
     direçao: "Hayao Miyazaki"
   }, 
   ]
-
+  /**Enunciado I: Cria um novo array com apenas o título e o ano de lançamento dos
+ * filmes. */
   const porNomeAno = (filme) =>  {
    const porTituloAno = {
      Titulo:filme.Titulo,
@@ -51,12 +47,18 @@
    return porTituloAno;
   }
   console.log(porNomeAno);
+
+  /**Enunciado II: Cria um novo array e adicione um atributo chamado id que é gerado
+ * de forma incremental. */
+  let aux =0;
   const porNomeAno2 = filem.map(({nome, anoLançamento}, index) =>{
+    //Posição e soma +1
+    aux++;
     return{
       nome, 
       anoLançamento,
       //Gera o id.
-      id: index + 1,
+      id: aux,
     };
   });
 
