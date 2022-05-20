@@ -26,9 +26,9 @@ function inverter(arquivo){
   if (arquivo.excluido === true) {
     arquivo.excluido = false;
   }
-  
-  arquivo.excluido = true;
-  
+  else if(arquivo.excluido === false){  
+    arquivo.excluido = true;
+  }  
 }
 arquivos.forEach(inverter);
 console.log(arquivos);
