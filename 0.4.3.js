@@ -44,3 +44,13 @@ const novoArray = arquivos.map((arquivo) => {
   return arquivo;
 });
 console.log(novoArray);
+
+
+function callback(arquivo){
+  if (arquivo.excluido === true) {
+    return (arquivo.excluido = false)
+  }
+  return arquivo.excluido = true;
+}
+arquivos.forEach(callback);
+console.log(arquivos);
