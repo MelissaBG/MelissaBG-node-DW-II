@@ -24,13 +24,13 @@ const arquivos = [
 
 function inverter(arquivo){
   if (arquivo.excluido === true) {
-   arquivo.excluido = false;
+    arquivo.excluido = false;
   }
   
   arquivo.excluido = true;
   
 }
-arquivos.forEach(callback);
+arquivos.forEach(inverter);
 console.log(arquivos);
 
 //Correção
