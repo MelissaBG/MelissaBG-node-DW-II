@@ -22,7 +22,7 @@ const arquivos = [
   }
 ]
 
-function callback(arquivo){
+function inverter(arquivo){
   if (arquivo.excluido === true) {
    arquivo.excluido = false;
   }
