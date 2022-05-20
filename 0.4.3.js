@@ -26,9 +26,9 @@ function callback(arquivo){
   if (arquivo.excluido === 'true') {
    arquivo.excluido = false;
   }
-  if (arquivo.excluido === 'false') {
-    arquivo.excluido = true;
-  }
+  
+  arquivo.excluido = true;
   
 }
 arquivos.forEach(callback);
+console.log(arquivos);
