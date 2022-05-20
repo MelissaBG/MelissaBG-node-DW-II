@@ -32,3 +32,15 @@ function callback(arquivo){
 }
 arquivos.forEach(callback);
 console.log(arquivos);
+
+//Correção
+arquivos.forEach((arquivo) => {
+  arquivo.excluido =!  arquivo>excluido;
+});
+console.log(arquivos);
+//USANDO MAP
+const novoArray = arquivos.map((arquivo) => {
+  arquivo.excluido =!  arquivo>excluido;
+  return arquivo;
+});
+console.log(novoArray);
