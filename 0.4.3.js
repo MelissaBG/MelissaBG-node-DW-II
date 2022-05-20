@@ -19,38 +19,37 @@ const arquivos = [
     id: 4,
     nome: 'Meu Trabalho v4',
     excluido: true,
-  }
-]
+  },
+];
 
-function inverter(arquivo){
+function inverter(arquivo) {
   if (arquivo.excluido === true) {
     arquivo.excluido = false;
-  }
-  else if(arquivo.excluido === false){  
+  } else if (arquivo.excluido === false) {
     arquivo.excluido = true;
-  }  
+  }
 }
 arquivos.forEach(inverter);
 console.log(arquivos);
 
 //Correção
 arquivos.forEach((arquivo) => {
-  arquivo.excluido =!  arquivo>excluido;
+  arquivo.excluido = !arquivo > excluido;
 });
 console.log(arquivos);
 //USANDO MAP
 const novoArray = arquivos.map((arquivo) => {
-  arquivo.excluido =!  arquivo>excluido;
+  arquivo.excluido = !arquivo > excluido;
   return arquivo;
 });
 console.log(novoArray);
 
-
-function callback(arquivo){
+//Outra maneira de fazer o forEach
+function callback(arquivo) {
   if (arquivo.excluido === true) {
-    return (arquivo.excluido = false)
+    return (arquivo.excluido = false);
   }
-  return arquivo.excluido = true;
+  return (arquivo.excluido = true);
 }
 arquivos.forEach(callback);
 console.log(arquivos);
