@@ -23,5 +23,6 @@ const alunos = [
   }
 ]
 alunos.forEach((aluno) => {
-  aluno.mediaGeral = aluno.notas.reduce((acumulador, nota) =>  nota.nota + acumulador / 2, 0);
+  const somaNotas = aluno.notas.reduce((acumulador, nota) =>  nota.nota + acumulador, 0);
+  aluno.mediaGeral = somaNotas / aluno.notas;
 });
