@@ -1,11 +1,51 @@
-function callback(medico){
-  if (medico.genero === 'masculino') {
-    medico.cordialidade = 'Dr. ' + medico.nome + ' ' + medico.sobrenome;
+/** sort()
+ * Caracteristicas: 
+ * Assinatura elemto A e elemento B que variam. Se for 1 vai decrementar o elemento A se for -1 vai decrementar o B.Usar quando quiser ordenar 
+ * Macete: 
+*/
+let numeros = [10, 20, 87];
+numeros = numeros.sort((A, B) => {
+  console.log(A);
+  console.log(B);
+  if(A > B) {
+    return -1;
   }
-  if (medico.genero === 'feminino') {
-    medico.cordialidade = 'Dra. ' + medico.nome + ' ' + medico.sobrenome;
+  if(A < B) { 
+    return 1;
   }
-  if (medico.genero === 'nao-binario') {
-    medico.cordialidade = 'Dr(e). ' + medico.nome + ' ' + medico.sobrenome;
-  }
+  return 0;
+});
+
+console.log(numeros);
+
+let numeros = [10, 20, 87];
+numeros = numeros.sort((A, B) =>  A - B);
+
+console.log(numeros);
+
+//com objetos
+let numeros = [
+  {
+    nome: 'Mathias',
+    valor: 20,
+    idade: 26
+  },
+  {
+    nome: 'Luiz',
+    valor: 10,
+    idade: 17
+  },
+  {
+    valor: 2,
+  },
+]
+//numeros = numeros.sort((A, B) => {
+  const valorComparacaoA = (A.valor + A.idade)/2;
+  const valorComparacaoB = (B.valor + B.idade)/2;
+  return valorComparacaoB - valorComparacaoA;
 }
+
+
+//Exemplo macete com objetos
+numeros = numeros.sort((A, B) => B.valor - A.valor);
+console.log(numero);
