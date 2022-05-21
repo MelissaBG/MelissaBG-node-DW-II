@@ -34,7 +34,7 @@ console.log(arquivos);
 
 //Correção
 arquivos.forEach((arquivo) => {
-  arquivo.excluido = !arquivo > excluido;
+  arquivo.excluido = !arquivo.excluido;
 });
 console.log(arquivos);
 //USANDO MAP
