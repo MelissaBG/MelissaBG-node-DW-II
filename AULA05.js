@@ -54,3 +54,29 @@ let novosNumeros = [10, 20, 30]
 //.reduce() Usado para tudo:
 const r = novosNumeros.reduce((acumulador, proximoValor) => acumulador + proximoValor, 0);
 console.log(r); 
+
+//Com objetos
+const aluno ={
+  nome: 'Luiz',
+  presenca:[
+    {
+      nome:'aula01',
+      presente:true,
+    },
+    {
+      nome:'aula02',
+      presente:false,
+    },
+    {
+      nome:'aula03',
+      presente:true,
+    }
+  ]
+}
+const r =aluno.presenca.reduce((acumulador, proximoValor) => {
+  if(proximoValor.presente){
+    return acumulador + 1;
+  }
+  return acumulador;
+}, 0);
+console.log(r); 
