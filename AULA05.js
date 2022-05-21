@@ -43,9 +43,13 @@ let numeros = [
   const valorComparacaoA = (A.valor + A.idade)/2;
   const valorComparacaoB = (B.valor + B.idade)/2;
   return valorComparacaoB - valorComparacaoA;
-}
+//}
 
 
 //Exemplo macete com objetos
 numeros = numeros.sort((A, B) => B.valor - A.valor);
 console.log(numero);
+
+let novosNumeros = [10, 20, 30]
+//.reduce() Usado para tudo:
+novosNumeros.reduce((acumulador, proximoValor) => acumulador + proximoValor, 0);
