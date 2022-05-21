@@ -53,3 +53,4 @@ console.log(numero);
 let novosNumeros = [10, 20, 30]
 //.reduce() Usado para tudo:
 const r = novosNumeros.reduce((acumulador, proximoValor) => acumulador + proximoValor, 0);
+console.log(r); 
