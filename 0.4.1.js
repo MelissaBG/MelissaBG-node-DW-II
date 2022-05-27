@@ -54,6 +54,7 @@ function gerarMediaGeral2(notas){
 //Com reduce
 function gerarMediaGeral3(notas){
   const mediaGeral = notas.reduce((acumulador , proximoValor) => acumulador + proximoValor.nota, 0);
+  return aluno.notas.mediaGeral = somaNotas / aluno.notas.length;
 }
 //const mediaGeral = gerarMediaGeral (alunos[1].notas);
 
