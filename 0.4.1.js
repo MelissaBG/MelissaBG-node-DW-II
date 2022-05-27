@@ -26,3 +26,36 @@ alunos.forEach((aluno) => {
   const somaNotas = aluno.notas.reduce((acumulador, nota) =>  nota.nota + acumulador, 0);
   aluno.mediaGeral = somaNotas / aluno.notas.length;
 });
+/*** Correção
+ * reduce - reduzir
+ */
+//Com Map 
+//Fazendo iteração para cada objeto
+const alunoComMediaGeral = alunos.map(aluno => {
+  const mediaGeral = gerarMediaGeral(aluno.notas);
+  aluno.mediaGeral = mediaGeral;
+  return aluno;
+});
+
+function gerarMediaGeral(notas){
+  let mediaGeral =0;
+  for(let nota of notas){
+    mediaGeral = mediaGeral + aluno.nota;
+  }
+  return mediaGeral / nota.length;
+}
+//Com forEach
+function gerarMediaGeral2(notas){
+  notas.forEach((notas) => {
+    mediaGeral = mediaGeral + nota.nota;
+  });
+  return mediaGeral / nota.length;
+}
+//Com reduce
+function gerarMediaGeral3(notas){
+  const mediaGeral = notas.reduce((acumulador , proximoValor) => acumulador + proximoValor.nota, 0);
+}
+//const mediaGeral = gerarMediaGeral (alunos[1].notas);
+
+
+//console.log(mediaComGeral);
