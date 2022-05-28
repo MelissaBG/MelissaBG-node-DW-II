@@ -17,7 +17,7 @@ buascarInformacoes((resultado) => {
 */
 function buscarInformacoes2(){
   let resultado =[];
- return new Promise((resolve) => {
+ return new Promise((resolve, reject) => {
   setTimeout(()=>{ //EXCUÇÃO ASSINCRONA
     resultado = ['Mathis', 'melissa'];
     callback(resultado);
@@ -27,14 +27,31 @@ function buscarInformacoes2(){
 buscarInformacoes2()
   .then((resultado) => { //quando minha promessa for resolvida
     console.log(1, resultado);
-    return buscarInformacoes2(); //Usando return permite usar outro then.
+    return Promise.reject('Erro na linha 22');   //negar umma promisse return promise.reject(); Então ele pula para o catch.
+    //buscarInformacoes2(); //Usando return permite usar outro then.
   })
   .then((resultado) => {
     console.log(2, resultado);
   })
-    .catch(()=> { //falha erro
-
+    .catch((erro)=> { //falha erro
+      console.log(erro);
     }) 
-  .finally(() => {
+  .finally(() => { //ambos finalizados
     console.log('finally')
   });
+
+  //async/ Await
+  async function main(){
+    try{
+      const resultado = await buscarInformacoes2();
+      console.log(resultado);
+    }
+    catch(erro){
+      console.log(erro);
+    }
+    finally{
+      console.log('Finalizado');
+    }
+  }
+  main(); //excecução da função
+
