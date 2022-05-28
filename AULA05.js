@@ -39,12 +39,14 @@ buscarInformacoes2()
   .finally(() => { //ambos finalizados
     console.log('finally')
   });
-
+  
   //async/ Await
   async function main(){
     try{
       const resultado = await buscarInformacoes2();
       console.log(resultado);
+      const resultado2 = await buscarInformacoes2();
+      console.log(resultado2); //outra consulta assincrona
     }
     catch(erro){
       console.log(erro);
@@ -53,5 +55,6 @@ buscarInformacoes2()
       console.log('Finalizado');
     }
   }
+  const resultado = await buscarInformacoes2();
   main(); //excecução da função
 
